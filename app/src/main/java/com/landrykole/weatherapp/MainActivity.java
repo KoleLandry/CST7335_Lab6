@@ -35,7 +35,8 @@ public class MainActivity extends AppCompatActivity implements RefreshButtonFrag
     }
 
     public void onRefreshButtonClick() {
-        new FetchWeatherTask(weatherFragment).execute("https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=44c900ab0dac64e01b2a24501d83ac88");
+                                                        // API key goes here
+        new FetchWeatherTask(weatherFragment).execute("");
         // Used to test if this stupid button works, and it DOES, but no weather will show up???
         // I copied the API key from their email so idk man
         Toast.makeText(this, "Button Clicked", Toast.LENGTH_SHORT).show();
